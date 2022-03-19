@@ -1,0 +1,28 @@
+JSX
+-----
+
+You can save a bunch of JSX in a variable 
+-------------------------------------------
+Ex. const page = (
+    <div>
+        <h1>Hi</h1>
+        <p>This is a paragraph</p>
+    </div>
+)
+ReactDOM.render(page, document.getElementById("root"))
+-------------------------------------------
+
+*** Must be wrapped in <div> tags becuase only one parent element can be returned. 
+*** You can also use empty tags to wrap JSX elements within a parent element 
+------------------------------------
+Ex. const page = (
+    <>
+        <h1>Hello</h1>
+        <p>This is my website!</p>
+    </>
+)
+------------------------------------
+
+
+
+

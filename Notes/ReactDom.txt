@@ -1,0 +1,20 @@
+ReactDom
+----------
+
+In order to use JSX in React, it needs to be imported. 
+- Should be included in your dependencies (React in package.json)
+- React v17 and below needs import React from "react" at the top of the page
+- To use JSX you need react, therefore you need to import react
+
+To use ReactDOM, you need...
+- import ReactDOM from "react-dom"
+
+ReactDom's job (and the render method) is to take react elements and interpret them in a way that the browser can understand.
+
+ReactDOM.render(what_do_you_want_to_render, where_do_you_want_to_render_it)
+------------------------------------------------------------------
+Ex. ReactDOM.render(<h1>Hi<h1/>, document.getElementById("root"))
+------------------------------------------------------------------
+
+If you console.log a component or function
+- The computer will return a javascript objects
