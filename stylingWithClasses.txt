@@ -1,0 +1,41 @@
+Styling with Classes:
+
+- use className to define an element you want to style in the css document
+    Ex. nav-items (pricing, about and contacts) will be styles in the css file
+- can style the image in css file too, if you add className 
+    Ex.  <img src="./react-logo.png" className="nav-logo" /> in index.jss
+       
+         // in style.css file
+         .nav-logo {
+           width: 60px;  // size of the image
+         }
+-------------------------------------------------------------
+// index.js
+function Header() {
+    return (
+        <header>
+            <nav className="nav">
+                <img src="./react-logo.png" width="40px" />
+                <ul className="nav-items">
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </header>
+    )
+}
+--------------------------------------------------------------
+//style.css
+.nav {
+    display: flex;
+}
+
+// flex out the nav items in a line
+.nav-items {
+    list-style: none;
+    display: flex;
+}
+---------------------------------------------------------------
+
+If you 
