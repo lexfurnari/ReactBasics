@@ -38,4 +38,25 @@ function Header() {
 }
 ---------------------------------------------------------------
 
-If you 
+Best way to organzie your components is to split them into different files.
+Ex. Header compoenent can go in its own file Header.js, but then you have to export
+the file so it can be used in another.
+
+If there is only one function in the file you can use export default
+Ex.    import React from "react"
+
+        export default function Header() {
+            return (
+                <header>
+                    <nav className="nav">
+                        <img src="./react-logo.png" className="nav-logo" />
+                        <ul className="nav-items">
+                            <li>Pricing</li>
+                            <li>About</li>
+                            <li>Contact</li>
+                        </ul>
+                    </nav>
+                </header>
+            )
+        }
+
