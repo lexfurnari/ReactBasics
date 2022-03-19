@@ -40,9 +40,12 @@ function Header() {
 
 Best way to organzie your components is to split them into different files.
 Ex. Header compoenent can go in its own file Header.js, but then you have to export
-the file so it can be used in another.
+the file so it can be used in another. In the other file (index.js), you need to import
+the header file.
 
 If there is only one function in the file you can use export default
+
+--------------------------------------------------
 Ex.    import React from "react"
 
         export default function Header() {
@@ -59,4 +62,7 @@ Ex.    import React from "react"
                 </header>
             )
         }
+--------------------------------------------------
+
+
 
