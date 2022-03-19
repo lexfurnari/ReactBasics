@@ -41,7 +41,9 @@ function Header() {
 Best way to organzie your components is to split them into different files.
 Ex. Header compoenent can go in its own file Header.js, but then you have to export
 the file so it can be used in another. In the other file (index.js), you need to import
-the header file.
+the header file. / means it is from the folder structure and ./name, name is the file name,
+not the functions name.
+Ex. import Header from "./Header.js"
 
 If there is only one function in the file you can use export default
 
@@ -64,5 +66,25 @@ Ex.    import React from "react"
         }
 --------------------------------------------------
 
+Simplify the index.js by adding all the functions under a div 
+and using ReactDOM.render (and import the corresponding files).
+
+// index.js file 
+import React from "react"
+import ReactDOM from "react-dom"
+import Header from "./Header"
+import Footer from "./Footer"
+import MainContent from "./MainContent"
+
+function Page() {
+    return (
+        <div>
+            <Header />
+            <MainContent />
+            <Footer />
+        </div>
+    )
+}
+ReactDOM.render(<Page />, document.getElementById("root"))
 
 
